@@ -5,7 +5,7 @@ import schemdraw.elements as elm
 
 #Circuit normal
 d = schemdraw.Drawing()
-d.add(elm.Line)
+d.add(elm.Resistor(label='$Z_s$'))
 d.push()
 d.add(elm.Capacitor(d='down',label='$C_0$'))
 d.add(elm.Line(d='left'))
@@ -22,7 +22,7 @@ d.save('normal.svg')
 
 #Circuit SD
 d = schemdraw.Drawing()
-d.add(elm.Line)
+d.add(elm.Resistor(label='$Z_s$'))
 d.push()
 d.add(elm.Capacitor(d='down',label='$C_0$'))
 d.add(elm.Line(d='left'))
